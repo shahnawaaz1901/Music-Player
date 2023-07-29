@@ -1,59 +1,65 @@
-html{
-    background-color: rgb(13,16,42);
+html {
+    background-color: rgb(13, 16, 42);
     color: white;
+    font-family: sans-serif
 }
 
-body{
+body {
     margin: 0px !important;
 }
 
-header{
+header {
     position: fixed;
+    background-color: rgb(13, 16, 42);
     top: 0px;
     width: 100%;
 }
-header > div{
+
+header>div {
     display: inline-block;
 }
 
-.logo{
+.logo {
     height: 100px;
     width: 300px;
 }
-.icon{
+
+.icon {
     height: 45px;
     width: 45px;
 }
 
-.icon > img{
+.icon>img {
     height: 100%;
-    width: 100%; 
-} 
+    width: 100%;
+}
 
-.logo > div{
+.logo>div {
     display: inline-block;
     margin: 0px;
 }
 
-.content{
+.content {
     color: white;
     vertical-align: top;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.thin{
+.thin {
     font-weight: 100;
 }
-.bold{
+
+.bold {
     font-weight: 900;
     letter-spacing: 2px;
 }
 
-.fav{
+.fav {
     vertical-align: top;
     margin-top: 10px;
 }
-.search-icon{
+
+.search-icon {
     height: 30px;
     width: 30px;
     vertical-align: top;
@@ -66,17 +72,19 @@ header > div{
     /* border: 2px solid white; */
 
 }
-.search-icon i{
+
+.search-icon i {
     height: 50px;
     width: 50px;
 }
-.form{
+
+.form {
     margin-top: 10px;
     vertical-align: top;
     margin-left: -12px;
 }
 
-.form > input{
+.form>input {
     color: white;
     border: none;
     padding: 10px;
@@ -85,11 +93,11 @@ header > div{
 }
 
 /* For Removing Border When Form is Clicked */
-.form > input:focus{
+.form>input:focus {
     outline: none;
 }
 
-.form-icon i{
+.form-icon i {
     height: 30.5px;
     width: 30px;
     color: white;
@@ -97,11 +105,11 @@ header > div{
     vertical-align: top;
     margin-left: -10px;
     padding-top: 8px;
-    border-radius:0px 10px 10px 0px;
+    border-radius: 0px 10px 10px 0px;
 
 }
 
-.noti-icon{
+.noti-icon {
     height: 50px;
     width: 50px;
     vertical-align: top;
@@ -115,7 +123,7 @@ header > div{
     color: white;
 }
 
-.profile{
+.profile {
     margin-left: 30px;
     height: 50px;
     width: 50px;
@@ -125,13 +133,13 @@ header > div{
     border: 2px solid white;
 }
 
-.profile > img{
+.profile>img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
 }
 
-.container{
+.container {
     height: 600px;
     width: 900px;
     margin-top: 10%;
@@ -139,36 +147,47 @@ header > div{
     /* border: 2px solid white; */
 }
 
-.covers{
+.covers {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
-.album-cover{
+
+.album-cover {
     height: 270px;
     width: 270px;
 }
-.album-cover img{
+
+.album-cover img {
     height: 100%;
     width: 100%;
 }
 
-.player{
+.album-cover:hover {
+    height: 300px;
+    width: 300px;
+    transition: all 0.2s ease-in-out;
+    margin-top: -10px;
+}
+
+.player {
     width: 0px;
     height: 0px;
     border-top: 20px solid transparent;
     border-left: 30px solid white;
 }
 
-.latest-release{
+.latest-release {
     margin-top: 5%;
 }
 
-.songs{
+
+.songs {
     display: flex;
     flex-wrap: wrap;
 }
 
-.song{
+.song {
     height: 100px;
     width: 370px;
     /* border: 2px solid white; */
@@ -176,90 +195,100 @@ header > div{
     box-shadow: 1px 1px 5px 5px rgb(21, 25, 63);
     display: flex;
 }
-.option > div{
+
+.option>div {
     display: inline-block;
     height: 3px;
     width: 3px;
     border-radius: 50%;
-    background-color: rgb(97,101,126);
+    background-color: rgb(97, 101, 126);
 }
 
-.album-photo{
+.album-photo {
     height: 100%;
     width: 90px;
 }
-.album-photo img{
+
+.album-photo img {
     height: 100%;
     width: 100%;
 }
 
-.song-details{
+.song-details {
     height: 100%;
     width: 265px;
     margin-left: 10px;
-    /* border: 2px solid white; */
-    /* color: rgb(97,101,126); */
 }
 
-.option{
+.option {
     text-align: end;
     font-size: 15px;
-    color: rgb(97,101,126);
+    color: rgb(97, 101, 126);
     cursor: pointer;
 }
-.name-time{
-    display:flex;
+
+.name-time {
+    display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
-.name{
+
+.name {
     letter-spacing: 1px;
+    font-weight: 500;
     font-size: 18px;
 }
 
-.time{
-    color: rgb(97,101,126);
+.time {
+    color: rgb(97, 101, 126);
     font-size: 16px;
 }
 
-.artist{
+.release {
     margin-top: 4px;
-    color: rgb(97,101,126);
+    color: rgb(157, 162, 195);
+    /* color: rgb(97,101,126); */
     font-size: 16px;
     letter-spacing: 1px;
 }
 
-.popular-artist h3{
+.popular-artist h3 {
     font-weight: 400;
 }
 
-.singer-profile{
+.singer-profile {
     height: 130px;
     width: 130px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: inline-block;
     vertical-align: top;
 }
 
-.singer-image{
+.singer-image {
     height: 80%;
     width: 80%;
     border-radius: 50%;
     border: 2px solid white;
-    margin: auto;
+    margin: 5px auto;
 }
 
-.singer-image img{
+.singer-image img {
     height: 100%;
     width: 100%;
     background-color: white;
     border-radius: 50%;
 }
-.singer-name{
+
+.singer-name {
     padding-top: 3px;
     font-size: 16px;
     height: 20%;
     width: 100%;
     text-align: center;
+    /* border: 2px solid white; */
+}
+
+.container {
     border: 2px solid white;
 }
+
